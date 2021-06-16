@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>project-page</title>
 </head>
 <body>
-	<header>
+	<header class="header">
 		<div class="wrapper-top">
-            <span>
+            <span class="adress">
                 Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek
             </span>
-            <ul>
+            <ul class="contacts">
                 <li>
                     <img src="img/mail-icon-svg.svg" height="14" width="14" alt="mail icon">
                     <a href="mailto:dorotapawezka@gmail.com">
@@ -30,10 +31,10 @@
         	<a href="#" class="header-logo">
         		<img src="img/head-logo.png" height="34" width="131" alt="logo 1">
         	</a>
-        	<nav class="navigation-head">
+        	<nav class="navigation">
         		<ul>
                     <li>
-                        <a href="#">
+                        <a href="#" class="active">
                             Strona główna
                         </a>
                     </li>
@@ -72,40 +73,48 @@
 					Some Slogan
 				</p>
 			</div>-->
-			<div class="slider">
-				<ul class="s-photo-2">
-					<li>
-						<img src="img/slider-photo-2.jpg" height="494" width="250" alt="slider-photo-2">
-					</li>
-				</ul>
-  				<ul class="s-photo-1">
-  					<li>
-  						<img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-1">
-  					</li>
-  					<a href="#">
-  						<img src="img/btn-prev.svg" height="56" width="56" alt="slider__control">
-  					</a>
-  					<a href="#">
-  						<img src="img/btn-next.svg" height="56" width="56" alt="slider__control">
-  					</a>
-  				</ul>
-  				<ul class="s-photo-3">
-  					<li>
-  						<img src="img/slider-photo-3.jpg" height="494" width="250" alt="slider-photo-3">
-  					</li>
-  				</ul>
-  			</div>
+            <div class="container">
+                <div class="slider-items">
+                    <ul class="slider-item">
+                        <li>
+                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-2">
+                        </li>
+                          <a href="#">
+                            <img src="img/btn-prev.svg" height="56" width="56" alt="slider__control">
+                        </a>
+                        <a href="#">
+                            <img src="img/btn-next.svg" height="56" width="56" alt="slider__control">
+                        </a>
+                    </ul>
+                    <ul class="slider-item">
+                        <li>
+                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-1">
+                        </li>
+                    </ul>
+                    <ul class="slider-item">
+                        <li>
+                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-3">
+                        </li>
+                    </ul>
+                    <p>
+                        1 
+                    </p>
+                    <p>
+                        /40
+                    </p>
+            </div>               
+        </div>
 		</section>	
 	</main>
-	<footer>
-		<div class="f-top">
+	<footer class="footer">
+		<div class="wrapper-top">
 			<a href="#">
 				<img src="img/head-logo.png" height="34" width="131" alt="logo 1">        	
 			</a>
-        	<nav class="navigation-foot">
+        	<nav class="navigation">
         		<ul>
                     <li>
-                        <a href="#">
+                        <a href="#" class="active">
                             Strona główna
                         </a>
                     </li>
@@ -131,11 +140,11 @@
                     </li>
         		</ul>
         	</nav>	
-        	<button class="f-button">
+        	<button class="btn-dark">
         		Oddzwoń
         	</button>
 		</div>
-		<div class="wrapper-bot">
+		<div class="wrapper-buttom">
         <a href="#" class="privace"> Polityka prywatności </a>
         <a href="#" class="secur-data"> Ochrona danych osobowych </a>
 		</div>	
