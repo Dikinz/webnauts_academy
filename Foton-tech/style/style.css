@@ -37,6 +37,13 @@
 .header .navigation .active{
     color: #FF7129;
 }
+.header .wrapper-bot .container{
+    display: flex;
+    justify-content: row;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
 .start-screen .main-title{
     /* для тестировщика */
     background: black;
@@ -146,7 +153,7 @@
 }
 .container {
     max-width: 1018px;
-    margin: 0;
+    margin: 0 auto;
 }
 /*.container .slider__item {
     height: 250px;
