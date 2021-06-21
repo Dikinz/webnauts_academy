@@ -1,6 +1,37 @@
+body{
+    margin: 0;
+}
+button{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header .wrapper-top{
    background: #20242D;
+   padding-top: 10px;
+   padding-bottom: 10px;
   
+}
+.header .wrapper-top .container{
+    display: flex;
+    justify-content: space-between;
+
 }
 .header .adress{
     font-size: 12px;
@@ -11,6 +42,21 @@
     text-align: left;
     color:  #FFFFFF;
 }
+.header .contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.header .contacts li{
+    margin-right: 56px;
+}
+.header .contacts li:last-child{
+    margin-right: 0px;
+}
+
+/*.header .contacts li{
+    display: inline-block;
+}Второй возможный вариант*/
+
 .header .contacts a{
     font-size: 12px;
     font-style: normal;
@@ -23,8 +69,29 @@
 }
 .header .wrapper-bot{
     background: #FFFFFF;
+    padding-top: 12px;
+    padding-bottom: 11px;
 
 }
+.header .wrapper-bot .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation ul{
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation li{
+    margin-right: 56px;
+}
+
+.header .navigation li:last-child{
+    margin-right: 0px;
+}
+
 .header .navigation a{
     height: 17px;
     width: 543px;
@@ -37,16 +104,15 @@
 .header .navigation .active{
     color: #FF7129;
 }
-.header .wrapper-bot .container{
-    display: flex;
-    justify-content: row;
-    padding-left: 50px;
-    padding-right: 50px;
 
-}
-.start-screen .main-title{
-    /* для тестировщика */
-    background: black;
+.start-screen{
+    background: gray;
+    background-image:url(../img/main-bg.jpg);
+    padding-top: 270px;
+    padding-bottom: 138px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 .start-screen .main-title{
     font-size: 92px;
@@ -56,6 +122,8 @@
     letter-spacing: 0em;
     text-align: center;
     color:  #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 16px;
 }
 
 .start-screen .slogan{
@@ -66,7 +134,11 @@
     letter-spacing: 0em;
     text-align: center;
     color:  #FFFFFF;
-    background: black;
+    max-width: 508px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 59px;
+
 }
 .start-screen .btn{
     background: #FF7129;
@@ -78,9 +150,22 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+    display: block;
+    width: 188px;
+    padding: 16px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 98px;
+
 }
-.start-screen .butoon-scroll{
-    background: rgba(123, 126, 133, 04);
+.start-screen .btn-scroll{
+    background: rgba(123, 126, 133, 0.4);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer .wrapper-top{
@@ -150,10 +235,6 @@
     letter-spacing: 0em;
     text-align: center;
     color: #20242D;
-}
-.container {
-    max-width: 1018px;
-    margin: 0 auto;
 }
 /*.container .slider__item {
     height: 250px;
