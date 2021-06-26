@@ -227,9 +227,9 @@ a{
 
 }
 .start-screen .btn-scroll{
-    background: rgba(123, 126, 133, 0.4);
-    width: 46px;
-    height: 46px;
+    background-color: rgba(123, 126, 133, 0.4);
+    /*width: 46px;
+    height: 46px;*/
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -341,4 +341,9 @@ a{
     letter-spacing: 0em;
     text-align: center;
 }
-
+.pop-up{
+    background-color: black;
+    box-sizing: border-box;
+    height: 800px;
+    width: 400px;
+}
