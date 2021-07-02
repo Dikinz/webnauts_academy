@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 @font-face {
     font-family: "Gilroy";
     src: url(../fonts/gilroy-regular.ttf);
@@ -60,7 +64,7 @@ a{
     box-shadow: 0px 4px 28px 0px #ff7129ab;
   }
 
-.container{
+.container {
     width: 100%;
     max-width: 1600px;
     padding-left: 50px;
@@ -559,4 +563,54 @@ a{
     background-color: #FF7129;
     color: #FFFFFF;
     
+}
+
+
+.info-screen {
+    background-image:url(../img/info-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    background-image:url(../img/content-info-bg.png);
+    background-position: 152px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.info-screen .main-title {
+    position: relative;
+    height: 130px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 200px;
+
+}
+
+.info-screen .decor-word {
+    position: absolute;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.content p {
+    display: list-item;
 }
