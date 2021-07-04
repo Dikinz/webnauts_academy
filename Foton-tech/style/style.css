@@ -20,6 +20,10 @@ p {
     margin: 0;
 }
 
+h1 {
+    margin: 0px;
+}
+
 
 @font-face {
     font-family: "Gilroy";
@@ -567,6 +571,7 @@ p {
     
 }
 
+/* Страничка 2 - Info-screen */
 
 .info-screen {
     background-image:url(../img/info-photo.jpg);
@@ -647,6 +652,23 @@ p {
 
 }
 
+
+/* Страничка 3 - Project-page*/
+
+.project-screen {
+    background-image: url(../img/bg-project-screen.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #7B7E85;
+    margin-top: 90px;
+    margin-bottom: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1201px;
+    max-height: 990px;
+}
+
 .project-screen .main-title {
     position: relative;
     font-size: 48px;
@@ -655,23 +677,32 @@ p {
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
-    /*color: #FFFFFF;*/
-    padding-top: 216px;
-    padding-left: 218px;
+    color: #20242D;
+    padding-top: 125px;
+    padding-left: 168px;
 }
 
 .project-screen .decor-word-4 {
     position: absolute;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
     line-height: 116px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;
+    color: transparent;
     text-transform: uppercase;
-    padding-top: 131px;
-    padding-left: 173px;
-    padding-bottom: 100px;
+    padding-top: 56px;
+    padding-left: 124px;
+    
+}
+.project-screen .slider-items .slider-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-item ul:first-child {
+    padding-right: 2000px;
 }
