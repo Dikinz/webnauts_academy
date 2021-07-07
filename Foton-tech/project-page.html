@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>project-page</title>
 </head>
@@ -49,7 +50,7 @@
                 <nav class="navigation">
                     <ul>
                         <li>
-                            <a href="#" class="active">
+                            <a href="#">
                                 Strona główna
                             </a>
                         </li>
@@ -59,7 +60,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="active">
                                 Projekty
                             </a>
                         </li>
@@ -82,45 +83,38 @@
     <main>
         <section class="project-screen">
             <div class="container">
-                <span class="decor-word-4">
-                    Gallery
-                </span>
-                <div class="main-title">
-                    <h1>
-                        Projekty
-                    </h1>
-                </div>
+                <h2 class="main-title">
+                    <span class="decor-word-4">
+                        Gallery
+                    </span>
+                    Projekty
+                </h2>
             </div>
-
-            <div class="container">
-                <div class="slider-items">
-                    <ul class="slider-item">
-                        <li>
-                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-2">
-                        </li>
-                        <a href="#">
-                            <img src="img/btn-prev.svg" height="56" width="56" alt="slider__control">
-                        </a>
-                        <a href="#">
-                            <img src="img/btn-next.svg" height="56" width="56" alt="slider__control">
-                        </a>
-                    </ul>
-                    <ul class="slider-item">
-                        <li>
-                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-1">
-                        </li>
-                    </ul>
-                    <ul class="slider-item">
-                        <li>
-                            <img src="img/slider-photo-1.jpg" height="494" width="1018" alt="slider-photo-3">
-                        </li>
-                    </ul>
-                    <p>
-                        1
-                    </p>
-                    <p>
-                        /40
-                    </p>
+            <div class="gellery-wrapper">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                        <div class="swiper-slide"> <img src="img/slider-photo-1.jpg" height="494" width="1018"
+                                alt="slider-photo-2"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -175,6 +169,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+
 </body>
 
 </html>

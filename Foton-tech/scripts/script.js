@@ -13,3 +13,17 @@ pop_UpBtn.addEventListener('click', showPop_UponClick);
 pop_UpClose.addEventListener('click', function(){
     pop_Up.classList.remove('pop-up-show');
 });
+
+let swiper = new Swiper(".mySwiper", {
+    centeredSlides: true,
+    slidesPerView: 1.2,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
