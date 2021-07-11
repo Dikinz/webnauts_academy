@@ -638,12 +638,12 @@ h1 {
 
 .info-content {
     background-color: #FFFFFF;
-    background-image:url(../img/content-info-bg.png);
-    background-position: 128px 0;
-    background-size: 1400px 1055px;
-    background-repeat: no-repeat;
     padding-top: 80px;
     padding-bottom: 184px;
+    background-image: url(../img/bg-main-paige.jpg.jpg);
+    background-size: 535px 606px;
+    background-position: 154px 132px;
+    background-repeat: no-repeat;
 }
 
 .info-content .content {
@@ -653,6 +653,43 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
+.info-content .content::before {
+    position: absolute;
+    top: 430px;
+    /*left: 0px;*/
+    content: "";
+    display: block;
+    width: 1px;
+    height: 468px;
+    background-color: #7B7E85;
+    opacity: 0.15
+}
+
+.info-content .content::after {
+    position: absolute;
+    top: 430px;
+    left: 985px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 468px;
+    background-color: #7B7E85;
+    opacity: 0.15
+}
+
+.info-content .content p::after {
+    position: absolute;
+    top: 430px;
+    left: 1600px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 468px;
+    background-color: #7B7E85;
+    opacity: 0.05
+}
+
 
 .info-screen .main-title {
     position: relative;
@@ -666,6 +703,18 @@ h1 {
     color: #FFFFFF;
     padding-top: 200px;
     padding-left: 217px;
+
+}
+
+.info-screen .main-title::before {
+    position: absolute;
+    top: 198px;
+    left: 200px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 52px;
+    background-color: #FF7129;
 
 }
 
