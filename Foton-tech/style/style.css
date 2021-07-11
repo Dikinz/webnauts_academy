@@ -44,6 +44,7 @@ h1 {
 }
 
 .btn {
+    font-family: "Gilroy";
     background: #ff7129;
     box-shadow: 0px 4px 28px 0px #ff71294a;
     font-size: 14px;
@@ -108,7 +109,6 @@ h1 {
     position: relative;
     margin-right: 56px;
     padding-left: 20px;
-
 }
 
 .header .contacts svg{
@@ -154,6 +154,7 @@ h1 {
 
 .header .navigation li {
     margin-right: 56px;
+    
 }
 
 .header .navigation li:last-child {
@@ -169,6 +170,11 @@ h1 {
     color: #20242D;
     text-decoration: none;
 }
+
+.header .navigation a:hover {
+    color: #ff7129;
+}
+
 
 .header .navigation .active {
     position: relative;
@@ -407,6 +413,10 @@ h1 {
     padding-bottom: 52px;
 }
 
+.footer .navigation a:hover {
+    color: #ff7129;
+}
+
 .footer .navigation .active{
     color: #FF7129;
 }
@@ -425,6 +435,7 @@ h1 {
 }
 
 .footer .btn-dark{
+    font-family: 'Gilroy';
     display: block;
     background-color: #20242D;
     border: 1px solid #FF7129;
@@ -659,11 +670,9 @@ h1 {
 .project-screen {
     background-image: url(../img/bg-project-screen.jpg.jpg);
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
-    background-color: #7B7E85;
-    /*max-width: 1201px;
-    max-height: 990px;*/
+    /*background-color: #7B7E85;*/
     padding-top: 125px;
     padding-bottom: 100px;
 }
